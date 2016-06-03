@@ -70,5 +70,32 @@ function setNextPlayer(player) {
   }
 }
 
+// DISPLAYS THE 'ACTIVE' PLAYER IN TURN DIV
+function displayNextPlayer(turn, player) {
+  turn.html('Player turn : '+player);
+}
+
+// WINNER DECLARED IF ANY ONE THE OPTIONS BELOW IS MET
+function checkIfPlayerWon(table, pattern) {
+  var won = 0;
+  if(table.find('.item1').hasClass(pattern) && table.find('.item2').hasClass(pattern) && table.find('.item3').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item1').hasClass(pattern) && table.find('.item4').hasClass(pattern) && table.find('.item7').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item1').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item9').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item4').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item6').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item7').hasClass(pattern) && table.find('.item8').hasClass(pattern) && table.find('.item9').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item2').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item8').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item3').hasClass(pattern) && table.find('.item6').hasClass(pattern) && table.find('.item9').hasClass(pattern)) {
+    won = 1;
+  } else if (table.find('.item3').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item7').hasClass(pattern)) {
+    won = 1;
+  }
+  return won;
+}
 
 });
