@@ -98,4 +98,11 @@ function checkIfPlayerWon(table, pattern) {
   return won;
 }
 
+// CLEAR 'X' and 'O's from td on table
+function reset(table) {
+  table.find('td').each(function() {
+    $(this).removeClass('circle').removeClass('cross');
+  });
+
 });
+}
