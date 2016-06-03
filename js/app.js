@@ -52,12 +52,21 @@ function changeState(td, pattern) {
   return td.addClass(pattern);
 }
 
-// 
+// PLAYER 1 GETS 'X' and other (or player 2) gets 'O'
 function definePatternForCurrentPlayer(player) {
   if(player == 1) {
     return 'cross';
   } else {
     return 'circle';
+  }
+}
+
+// TELLS WHICH PLAYER IS NEXT
+function setNextPlayer(player) {
+  if(player == 1) {
+    return player = 2;
+  } else {
+    return player = 1;
   }
 }
 
