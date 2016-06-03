@@ -1,0 +1,50 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  color: #dedcee;
+  text-shadow: -1px -1px #fffcf0;
+  background: #6a60a9;
+}
+body h1 {
+  font-weight: normal;
+}
+body .turn {
+  margin-bottom: 10px;
+}
+body table {
+  border-collapse: collapse;
+  width: 450px;
+  margin: 0 auto;
+}
+body table td {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #fffcf0;
+  cursor: pointer;
+}
+body table td:before {
+  font-size: 1.5em;
+  line-height: 1;
+}
+body table td.cross:before {
+  content: "x";
+  color: #fffcf0;
+}
+body table td.circle:before {
+  content: "o";
+  color: #fbd14b;
+}
+body .reset {
+  background: #6a60a9;
+  border: 1px solid #333;
+  padding: 5px 10px;
+  color: #dedcee;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+}
+body .reset:hover {
+  opacity: 0.8;
+}
