@@ -18,10 +18,10 @@ $(function() {
 			if(checkIfPlayerWon(table, pattern)) {
 		        messages.html('Player '+player+' has won.');
 		        turn.html('');
-		    } else {
-		        player = setNextPlayer(player);
-		        displayNextPlayer(turn, player);
-		      }
+		      } else {
+	        player = setNextPlayer(player);
+	        displayNextPlayer(turn, player);
+		    }
 		    } else {
 		      messages.html('This box is already checked.');
 		    }
@@ -104,5 +104,5 @@ function reset(table) {
     $(this).removeClass('circle').removeClass('cross');
   });
 
-});
+
 }

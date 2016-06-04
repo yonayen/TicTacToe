@@ -4,14 +4,17 @@ body {
   text-align: center;
   margin-top: 50px;
   color: #dedcee;
-  text-shadow: -1px -1px #fffcf0;
+/*  text-shadow: -1px -1px #fffcf0;*/
   background: #6a60a9;
 }
 h1 {
   font-weight: normal;
+  font-size: 3.5em;
+  font-weight: bold;
 }
 .turn {
   margin-bottom: 10px;
+  font-size: 1.5em;
 }
 table {
   border-collapse: collapse;
@@ -31,10 +34,12 @@ table td:before {
 table td.cross:before {
   content: "x";
   color: #fffcf0;
+  font-size: 4.5em;
 }
 table td.circle:before {
   content: "o";
   color: #fbd14b;
+  font-size: 4.5em;
 }
 .reset {
   background: #6a60a9;
