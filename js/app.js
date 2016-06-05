@@ -1,4 +1,4 @@
-
+// DEFINE EVENTS WHEN BOX IS CLICKED BY PLAYER
 $(function() {
   
   var player = 1;
@@ -28,7 +28,6 @@ $(function() {
 		  });
 
 //  RESET THE BOARD!
-
   $('.reset').click(function() {
     player = 1;
     messages.html('');
