@@ -9,7 +9,8 @@ $(function() {
   displayNextPlayer(turn, player);
   
 
-  $('td').click(function() {
+  $('td').click(function()
+  {
     if(gameOver == false)
     {
 	    td = $(this);
@@ -25,19 +26,21 @@ $(function() {
 					gameOver = true;
 			        messages.html('Player '+player+' has won.');
 			        turn.html('');
-			      }
-			      else
-			      {
-		        player = setNextPlayer(player);
-		        displayNextPlayer(turn, player);
-			      }
+			    }
+			    else
+			    {
+			        player = setNextPlayer(player);
+			        displayNextPlayer(turn, player);
+			    }
 			    }
 			    else
 			    {
 			      messages.html('This box is already checked.');
 			    }
-			  });
+	  	}
   	}
+  }
+
 //  RESET THE BOARD!
   $('.reset').click(function() {
     player = 1;
