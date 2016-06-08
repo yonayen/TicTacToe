@@ -22,6 +22,7 @@ $(function() {
 				// adds 'x' or 'o' to space
 				if(checkIfPlayerWon(table, pattern))
 				{
+					gameOver = true;
 			        messages.html('Player '+player+' has won.');
 			        turn.html('');
 			      }
