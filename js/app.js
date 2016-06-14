@@ -18,28 +18,28 @@ $(function() {
 	    if(!state) 
 	    {
 	      var pattern = definePatternForCurrentPlayer(player);
-				// Pattern for player is 'x' or 'o'
-				changeState(td, pattern);
-				// adds 'x' or 'o' to space
-				if(checkIfPlayerWon(table, pattern))
-				{
-					gameOver = true;
-			        messages.html('Player '+player+' has won.');
-			        turn.html('');
-			    }
-			    else
-			    {
-			        player = setNextPlayer(player);
-			        displayNextPlayer(turn, player);
-			    }
-			    }
-			    else
-			    {
-			      messages.html('This box is already checked.');
-			    }
-	  	}
+			// Pattern for player is 'x' or 'o'
+			changeState(td, pattern);
+			// adds 'x' or 'o' to space
+			if(checkIfPlayerWon(table, pattern))
+			{
+				gameOver = true;
+		        messages.html('Player '+player+' has won.');
+		        turn.html('');
+		    }
+		    else
+		    {
+		        player = setNextPlayer(player);
+		        displayNextPlayer(turn, player);
+		    }
+	    }
+	    else
+	    {
+	      messages.html('This box is already checked.');
+	    }
   	}
-  }
+  });
+
 
 //  RESET THE BOARD!
   $('.reset').click(function() {
